@@ -1,0 +1,41 @@
+/* Style for the container */
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Style for the gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 1000px; /* Adjust as needed */
+}
+
+/* Style for individual items */
+.item {
+    flex: 1 1 200px; /* Adjust basis as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.caption {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .item {
+        flex-basis: 100%;
+    }
+}
